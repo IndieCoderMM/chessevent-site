@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  width: 100%;
+}
+
+p {
+  line-height: 1.4rem;
+  margin: 0;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+hr {
+  width: 20%;
+  height: 3px;
+  background-color: #ed641f;
+  border: none;
+}
+
+:root {
+  --dark: #272a31;
+  --orange: #ec5242;
+  --gray: #d3d3d3;
+}
+
+/* || Utilities */
+
+.icon-container {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.section-heading {
+  font-weight: 700;
+}
+
+/* || Navbar Section  */
+
+.navbar {
+  background-color: blueviolet;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-logo {
+  display: none;
+}
+
+.logo-pic {
+  width: 40px;
+  height: 40px;
+}
+
+.nav-bar {
+  height: 20vh;
+  background-image: url('img/chess-pieces.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: top left;
+}
+
+.nav-bar nav {
+  width: 100%;
+  height: 100%;
+  background-color: #d3d3d3d6;
+}
+
+.nav-menu {
+  display: none;
+  flex-direction: column;
+  list-style: none;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(221, 160, 221, 0.806);
+  backdrop-filter: blur(5px);
+}
+
+.nav-menu li {
+  padding: 2px 5px;
+  font-size: 1.2rem;
+}
+
+/* || Headline Section  */
+.headline {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  height: 90vh;
+  background-color: #eae9e9e4;
+}
+
+#menu-btn {
+  font-size: 2rem;
+  padding: 0.5rem;
+  z-index: 10;
+}
+
+#main-heading {
+  color: var(--orange);
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.greeting {
+  display: block;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.event-date {
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+
+.event-location {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+/* || Program Section  */
+.program-container {
+  background-color: var(--dark);
+  color: #fff;
+}
+
+.program-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #333;
+}
+
+.program-title {
+  color: var(--orange);
+  font-size: 1.4rem;
+}
+
+#join-btn {
+  font-size: 1.2rem;
+  background-color: var(--orange);
+  color: #fff;
+  padding: 0.5rem 4rem;
+  border: solid 1px var(--orange);
+}
+
+#join-btn:hover {
+  color: var(--orange);
+  background-color: var(--dark);
+}
+
+/* || Player Section  */
+.profile-pic {
+  width: 100px;
+  height: 100px;
+}
+
+.player-name {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.player-title {
+  color: var(--orange);
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+.player-bio {
+  font-size: 0.8rem;
+}
+
+/* || Partner section  */
+.partner-container {
+  background-color: var(--dark);
+  color: #fff;
+}
+
+.partner-logo {
+  display: block;
+  max-width: 100px;
+}
+
+/* || Footer container  */
+.footer-container {
+  font-size: 0.9rem;
+}
+
+.footer-container h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
