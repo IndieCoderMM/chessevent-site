@@ -93,13 +93,15 @@ hr {
 }
 
 /* || Headline Section  */
+.headline-container {
+  background-color: var(--gray);
+}
+
 .headline {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 1rem;
-  height: 90vh;
-  background-color: #eae9e9e4;
+  padding: 2rem 1rem;
 }
 
 #menu-btn {
@@ -127,7 +129,6 @@ hr {
 
 .event-location {
   font-size: 1.3rem;
-  margin-bottom: 2rem;
 }
 
 /* || Program Section  */
@@ -196,10 +197,17 @@ hr {
 
 /* || Footer container  */
 .footer-container {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .footer-container h2 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 700;
+}
+
+/* ----------------------------------------------- */
+/* || About Page Styles */
+
+.event-card:hover {
+  box-shadow: 0 5px 10px #ccc;
 }
