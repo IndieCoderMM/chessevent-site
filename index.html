@@ -23,55 +23,101 @@
       crossorigin="anonymous"
       defer
     ></script>
-
-    <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/9d6e6aaa13.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="nav-bar">
-      <section class="page-logo">
-        <a href="#"
-          ><i class="far fa-chess-knight"></i> Global Chess Championship 2022</a
-        >
+    <header class="page-header">
+      <ul class="tool-bar">
+        <li>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="#">English</a>
+        </li>
+        <li>
+          <a href="#">My Page</a>
+        </li>
+        <li>
+          <a href="#">Logout</a>
+        </li>
+      </ul>
+      <section class="nav-bar">
+        <div class="page-logo">
+          <a href="#" class="navbar-brand"
+            ><i
+              class="far fa-chess-knight rounded-circle bg-warning border border-dark p-2"
+            ></i>
+            Global Chess Championship 2022</a
+          >
+        </div>
+        <nav>
+          <button id="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <ul class="nav-menu">
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li><a href="#program-section">Program</a></li>
+            <li><a href="#player-section">Players</a></li>
+            <li><a href="#partner-section">Partner</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#" class="btn btn-outline">Campaign</a></li>
+          </ul>
+        </nav>
       </section>
-      <nav>
-        <button id="menu-btn">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-        <ul class="nav-menu">
-          <li>About</li>
-          <li>Program</li>
-          <li>Players</li>
-          <li>Sponsar</li>
-          <li>News</li>
-          <li>Campaign</li>
-        </ul>
-      </nav>
     </header>
     <main>
-      <article class="headline-container p-3">
+      <article class="headline-container" id="headline-section">
         <section class="d-flex flex-column headline">
-          <h1 id="main-heading">
+          <h1>
             <span class="greeting"> "Hello! Chess World" </span>
-            International Chess Championship 2022
+            Global Chess Championship 2022
           </h1>
           <p class="p-4 border border-3 border-white">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate
             quia natus quasi minus, enim sunt nihil vel aliquam odio tempora.
           </p>
           <h2 class="event-date">2022.11.21(Mon) ~ 25(Fri)</h2>
-          <p class="event-location">@ International Chess Center, UK</p>
+          <p class="event-location">
+            @ International Chess Center, Paris, France
+          </p>
         </section>
       </article>
       <article
         class="program-container d-flex flex-column align-items-center p-3"
+        id="program-section"
       >
-        <h2 id="program-heading" class="section-heading">Main Program</h2>
+        <h2 class="section-heading">Main Program</h2>
         <hr />
-        <section class="row p-3 gap-3">
+        <section class="row gap-3 p-3 justify-content-center">
+          <section class="program-card col-md-2">
+            <div class="icon-container">
+              <i class="fa-solid fa-chalkboard-user"></i>
+            </div>
+            <h3 class="program-title">Lecture</h3>
+            <p class="p-1">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Corrupti, eveniet?
+            </p>
+          </section>
+          <section class="program-card col-md-2">
+            <div class="icon-container">
+              <i class="fa-solid fa-chalkboard-user"></i>
+            </div>
+            <h3 class="program-title">Lecture</h3>
+            <p class="p-1">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Corrupti, eveniet?
+            </p>
+          </section>
           <section class="program-card col-md-2">
             <div class="icon-container">
               <i class="fa-solid fa-chalkboard-user"></i>
@@ -107,11 +153,12 @@
       </article>
       <article
         class="feature-container d-flex flex-column align-items-center p-3 bg-white"
+        id="player-section"
       >
-        <h2 id="player-heading" class="section-heading">Featured Players</h2>
+        <h2 class="section-heading">Featured Players</h2>
         <hr />
-        <section class="row">
-          <section class="col-md-2 d-flex align-items-center p-1 speaker">
+        <section class="row justify-content-center">
+          <section class="col-md-5 d-flex align-items-center p-1 speaker">
             <img
               src="img/magnus.jpg"
               alt="profile picture"
@@ -126,14 +173,14 @@
               </p>
             </section>
           </section>
-          <section class="col-md-2 d-flex align-items-center p-1 speaker">
+          <section class="col-md-5 d-flex align-items-center p-1 speaker">
             <img
-              src="img/magnus.jpg"
+              src="img/hikaru.jpg"
               alt="profile picture"
               class="profile-pic"
             />
             <section class="p-3 player-info">
-              <h3 class="player-name">Magnus Calsen</h3>
+              <h3 class="player-name">Hikaru Nakamura</h3>
               <h4 class="player-title">Grandmaster</h4>
               <p class="player-bio">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias
@@ -141,14 +188,29 @@
               </p>
             </section>
           </section>
-          <section class="col-md-2 d-flex align-items-center p-1 speaker">
+          <section class="col-md-5 d-flex align-items-center p-1 speaker">
             <img
-              src="img/magnus.jpg"
+              src="img/nepo.jpeg"
               alt="profile picture"
               class="profile-pic"
             />
             <section class="p-3 player-info">
-              <h3 class="player-name">Magnus Calsen</h3>
+              <h3 class="player-name">Ian Nepomniachtchi</h3>
+              <h4 class="player-title">Grandmaster</h4>
+              <p class="player-bio">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias
+                beatae nulla distinctio aliquid ipsum atque.
+              </p>
+            </section>
+          </section>
+          <section class="col-md-5 d-flex align-items-center p-1 speaker">
+            <img
+              src="img/fabiano.jpg"
+              alt="profile picture"
+              class="profile-pic"
+            />
+            <section class="p-3 player-info">
+              <h3 class="player-name">Fabiano Caruana</h3>
               <h4 class="player-title">Grandmaster</h4>
               <p class="player-bio">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias
@@ -160,8 +222,9 @@
       </article>
       <article
         class="partner-container d-flex flex-column align-items-center p-2"
+        id="partner-section"
       >
-        <h2 id="partner-heading" class="section-heading">Partner</h2>
+        <h2 class="section-heading">Partner</h2>
         <hr />
         <section
           class="partner-grid d-flex flex-wrap align-items-center p-3 gap-4 justify-content-center"
@@ -191,8 +254,7 @@
     >
       <h2><i class="far fa-chess-knight"></i> Global Chess Championship</h2>
       <p class="text-center">
-        2022 &copy; Global Chess Championship <br />
-        All Rights Reserved.
+        2022 &copy; Global Chess Championship All Rights Reserved.
       </p>
     </footer>
   </body>

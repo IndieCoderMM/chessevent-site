@@ -14,13 +14,19 @@ p {
   margin: 0;
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 button {
   background: none;
   border: none;
 }
 
 hr {
-  width: 20%;
+  width: 10%;
   height: 3px;
   background-color: #ed641f;
   border: none;
@@ -43,29 +49,48 @@ hr {
   font-weight: 700;
 }
 
-/* || Navbar Section  */
+/* || Header Section  */
 
-.navbar {
-  background-color: blueviolet;
-  display: flex;
-  justify-content: space-between;
-}
-
-.page-logo {
+.tool-bar {
   display: none;
+  background-color: var(--dark);
+  justify-content: flex-end;
+  gap: 1rem;
+  padding: 0.3rem 2rem;
 }
 
-.logo-pic {
-  width: 40px;
-  height: 40px;
+.tool-bar a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+.tool-bar i {
+  font-size: 1rem;
+  padding: 0.3rem;
+}
+
+.tool-bar a:hover {
+  color: var(--orange);
 }
 
 .nav-bar {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 20vh;
+
   background-image: url('img/chess-pieces.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: top left;
+}
+
+.page-logo {
+  display: none;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 .nav-bar nav {
@@ -76,8 +101,9 @@ hr {
 
 .nav-menu {
   display: none;
-  flex-direction: column;
-  list-style: none;
+}
+
+.nav-menu.mobile-menu {
   position: absolute;
   width: 100%;
   height: 100vh;
@@ -88,8 +114,23 @@ hr {
 }
 
 .nav-menu li {
-  padding: 2px 5px;
-  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border: solid 1px #fff;
+  min-width: 80px;
+  text-align: center;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.nav-menu li:hover {
+  border-color: var(--orange);
+}
+
+.nav-menu li:hover a {
+  color: var(--orange);
 }
 
 /* || Headline Section  */
@@ -110,7 +151,7 @@ hr {
   z-index: 10;
 }
 
-#main-heading {
+.headline h1 {
   color: var(--orange);
   font-size: 3rem;
   font-weight: 900;
@@ -210,4 +251,58 @@ hr {
 
 .event-card:hover {
   box-shadow: 0 5px 10px #ccc;
+}
+
+/* ------------------------------------------------ */
+/* || Desktop Version  */
+@media (min-width: 768px) {
+  /* Navbar  */
+  .tool-bar {
+    display: flex;
+  }
+
+  .nav-bar {
+    height: auto;
+    background-image: none;
+    padding: 0.5rem 1rem;
+  }
+
+  .nav-bar nav {
+    width: auto;
+    background-color: #fff;
+  }
+
+  .nav-menu a {
+    color: #000;
+  }
+
+  .page-logo {
+    display: block;
+  }
+
+  #menu-btn {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex;
+  }
+
+  /* Headline  */
+  .headline-container {
+    background-image: url('img/chessbg-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top left;
+  }
+  .headline {
+    padding: 10rem 20rem 10rem 5rem;
+    background-color: #d3d3d3d6;
+    backdrop-filter: blur(3px);
+  }
+
+  /* Programs  */
+  .program-card {
+    flex-direction: column;
+  }
 }
