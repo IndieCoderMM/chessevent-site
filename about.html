@@ -23,12 +23,13 @@
       crossorigin="anonymous"
       defer
     ></script>
-
-    <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/9d6e6aaa13.js"
       crossorigin="anonymous"
     ></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
   </head>
   <body>
     <header class="page-header">
@@ -58,19 +59,37 @@
             Global Chess Championship 2022</a
           >
         </div>
-        <nav>
+        <nav class="nav-container">
           <button id="menu-btn">
             <i class="fa-solid fa-bars"></i>
           </button>
           <ul class="nav-menu">
-            <li>
+            <li><a href="#">Home</a></li>
+            <li class="active">
               <a href="about.html">About</a>
             </li>
             <li><a href="#program-section">Program</a></li>
             <li><a href="#player-section">Players</a></li>
             <li><a href="#partner-section">Partner</a></li>
-            <li><a href="#">News</a></li>
-            <li class="nav-btn">Events</li>
+            <li class="nav-btn"><a href="#">Events</a></li>
+          </ul>
+          <ul class="mobile-toolbar">
+            <li><a href="#">Events</a></li>
+            <li>
+              <a href="#">English</a>
+            </li>
+            <li>
+              <a href="#">Mypage</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-right-from-bracket"></i> </a>
+            </li>
           </ul>
         </nav>
       </section>
