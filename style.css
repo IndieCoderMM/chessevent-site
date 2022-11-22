@@ -60,7 +60,6 @@ hr {
 }
 
 /* || Header Section  */
-
 .tool-bar {
   display: none;
   background-color: var(--dark);
@@ -280,7 +279,7 @@ hr {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 0.25rem;
   padding: 1rem;
   background-color: #333;
 }
@@ -291,7 +290,8 @@ hr {
 
 .program-title {
   color: var(--orange);
-  font-size: 1.4rem;
+  font-size: 1.3rem;
+  min-width: 5rem;
 }
 
 #join-btn {
@@ -300,6 +300,7 @@ hr {
   color: #fff;
   padding: 0.5rem 4rem;
   border: solid 1px var(--orange);
+  margin: 1rem 0 1.5rem 0;
 }
 
 #join-btn:hover {
@@ -308,9 +309,39 @@ hr {
 }
 
 /* || Player Section  */
-.profile-pic {
+.player-card {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.img-container {
+  position: relative;
   width: 100px;
   height: 100px;
+  background-image: url('img/chessboard.png');
+  background-repeat: no-repeat;
+  background-size: 50% 50%;
+  background-position: top left;
+}
+
+.overlap-img {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.player-info {
+  padding-left: 1rem;
+}
+
+.profile-pic {
+  width: 85%;
+  height: 85%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .player-name {
@@ -320,7 +351,7 @@ hr {
 
 .player-title {
   color: var(--orange);
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-style: italic;
 }
 
@@ -408,7 +439,7 @@ hr {
   /* Programs  */
   .program-card {
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .program-card p {
