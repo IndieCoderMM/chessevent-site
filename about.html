@@ -31,36 +31,73 @@
     ></script>
   </head>
   <body>
-    <header class="nav-bar">
-      <section class="page-logo">
-        <a href="#"
-          ><i class="far fa-chess-knight"></i> Global Chess Championship 2022</a
-        >
+    <header class="page-header">
+      <ul class="tool-bar">
+        <li>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="#">English</a>
+        </li>
+        <li>
+          <a href="#">Mypage</a>
+        </li>
+        <li>
+          <a href="#">Logout</a>
+        </li>
+      </ul>
+      <section class="nav-bar">
+        <div class="page-logo">
+          <a href="#" class="navbar-brand"
+            ><i
+              class="far fa-chess-knight rounded-circle bg-warning border border-dark p-2"
+            ></i>
+            Global Chess Championship 2022</a
+          >
+        </div>
+        <nav>
+          <button id="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <ul class="nav-menu">
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li><a href="#program-section">Program</a></li>
+            <li><a href="#player-section">Players</a></li>
+            <li><a href="#partner-section">Partner</a></li>
+            <li><a href="#">News</a></li>
+            <li class="nav-btn">Events</li>
+          </ul>
+        </nav>
       </section>
-      <nav>
-        <button id="menu-btn">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-        <ul class="nav-menu">
-          <li>About</li>
-          <li>Program</li>
-          <li>Players</li>
-          <li>Sponsar</li>
-          <li>News</li>
-          <li>Campaign</li>
-        </ul>
-      </nav>
     </header>
     <main>
       <article class="headline-container">
-        <section class="headline">
-          <h1 id="main-heading" class="text-center">
+        <section class="headline about-headline">
+          <h1
+            id="main-heading"
+            class="text-center ms-md-5 me-md-5 ps-md-5 pe-md-5"
+          >
             <span class="greeting text-center"> "Hello! Chess World" </span>
             Global Chess Championship 2022
           </h1>
           <p class="p-4 bg-white">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate
-            quia natus quasi minus, enim sunt nihil vel aliquam odio tempora.
+            There are 24 players. Each player will play in two out of three of
+            the tournaments. Each tournament will have 16 players, and have a
+            two-stage format. In the first stage, the players are divided into
+            four pools of four, and the players in each pool play a double
+            round-robin mini-tournament. The four winners of the pools progress
+            to the second stage. In the second stage, the four pool winners play
+            a knock-out tournament, consisting of semi-finals and a final. Both
+            the semi-finals and final will consist of 2 regular time limit
+            games, plus tie-breaks if required. Players receive points according
+            to their finishing position in each tournament. The two players with
+            the most points across the two tournaments they play qualify for the
+            Candidates Tournament 2022.
           </p>
           <p class="ps-5 pe-5 text-center">
             Please contact us per Email for any further questions about Global
@@ -77,10 +114,10 @@
         </h2>
         <hr class="mt-0" />
         <p class="text-center">
-          This logo was decided throught the logo competition from 8.June to
+          This logo was decided through the logo competition from 8.June to
           7.July.
         </p>
-        <section class="border m-2 p-4 d-flex align-items-center shadow">
+        <section class="border m-2 mt-5 p-4 d-flex align-items-center shadow">
           <div class="display-1 me-1 rounded-circle bg-warning p-3">
             <i class="far fa-chess-knight"></i>
           </div>
@@ -102,7 +139,7 @@
           Take a look at the last two international chess events which took
           place in 2021 and 2018.
         </p>
-        <section class="events p-5 d-flex flex-column gap-5">
+        <section class="events p-5 d-flex flex-column flex-md-row gap-4">
           <a href="#" class="event-card card">
             <img
               src="img/chess-event1.jpg"
@@ -117,7 +154,7 @@
           </a>
           <a href="#" class="event-card card">
             <img
-              src="img/chess-event1.jpg"
+              src="img/chess-event2.jpeg"
               alt="chess event photo"
               class="card-image-top"
             />
