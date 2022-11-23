@@ -36,8 +36,6 @@ const playersList = [
   },
 ];
 
-const isMenuOpen = () => navContainer.classList.contains(DISPLAY_MENU);
-
 function makeElement(tag, classList, text = '') {
   const elem = document.createElement(tag);
   classList.forEach((className) => elem.classList.add(className));
@@ -45,7 +43,7 @@ function makeElement(tag, classList, text = '') {
   return elem;
 }
 
-function makePlayerCard(player) {
+function getPlayerCard(player) {
   const card = makeElement('section', ['player-card', 'col-md-5']);
   const imgContainer = makeElement('div', ['img-container']);
   const profileImg = makeElement('img', ['profile-pic']);
@@ -55,6 +53,7 @@ function makePlayerCard(player) {
   const bio = makeElement('p', ['player-bio'], player.bio);
 
   profileImg.setAttribute('src', player.profile);
+  profileImg.setAttribute('alt', player.name);
   imgContainer.appendChild(profileImg);
   infoSection.appendChild(name);
   infoSection.appendChild(title);
@@ -64,6 +63,8 @@ function makePlayerCard(player) {
 
   return card;
 }
+
+const isMenuOpen = () => navContainer.classList.contains(DISPLAY_MENU);
 
 function toggleMobileMenu() {
   navContainer.classList.toggle(DISPLAY_MENU);
@@ -78,18 +79,17 @@ function toggleMobileMenu() {
 }
 
 // DOM manipulation
-
-playersList.forEach((player) => {
-  const playerCard = makePlayerCard(player);
-  featureGrid.appendChild(playerCard);
-});
+if (featureGrid !== null) {
+  playersList.forEach((player) => {
+    const playerCard = getPlayerCard(player);
+    featureGrid.appendChild(playerCard);
+  });
+}
 
 menuBtn.addEventListener('click', toggleMobileMenu);
 
-navItems.forEach((item) =>
-  item.addEventListener('click', () => {
-    if (isMenuOpen()) {
-      toggleMobileMenu();
-    }
-  })
-);
+navItems.forEach((item) => item.addEventListener('click', () => {
+  if (isMenuOpen()) {
+    toggleMobileMenu();
+  }
+}));

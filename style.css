@@ -80,17 +80,12 @@ hr {
   padding: 0.3rem;
 }
 
-.tool-bar a:hover {
-  color: var(--orange);
-}
-
 .nav-bar {
   background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 20vh;
-
   background-image: url('img/chess-pieces.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -135,13 +130,6 @@ hr {
   color: var(--orange);
 }
 
-.nav-menu a:hover {
-  box-shadow: inset 0 -3.5em 0 0 var(--orange);
-  color: #fff;
-}
-
-/* Events button  */
-
 .nav-menu .nav-btn {
   border: solid 4px var(--orange);
   margin-left: 0.5rem;
@@ -155,6 +143,15 @@ hr {
   color: var(--orange);
   font-weight: 700;
   padding: 0.5rem 1rem;
+}
+
+.tool-bar a:hover {
+  color: var(--orange);
+}
+
+.nav-menu a:hover {
+  box-shadow: inset 0 -3.5em 0 0 var(--orange);
+  color: #fff;
 }
 
 .nav-btn:hover {
@@ -195,7 +192,6 @@ hr {
   height: 100vh;
   top: 0;
   left: 0;
-  /* background-color: rgba(255, 255, 255, 0.487); */
   background-color: #272a31c4;
   backdrop-filter: blur(5px);
   overflow-y: scroll;
@@ -220,13 +216,13 @@ hr {
   color: #fff;
 }
 
+.mobile-menu .active a {
+  color: var(--orange);
+}
+
 .mobile-menu .nav-menu a:hover {
   background-color: var(--orange);
   color: #fff;
-}
-
-.mobile-menu .active a {
-  color: var(--orange);
 }
 
 .mobile-menu .nav-btn {
@@ -247,13 +243,13 @@ hr {
   text-align: center;
 }
 
-.mobile-toolbar a {
+.mobile-tool-link {
   display: block;
   font-size: 1.5rem;
   transition: all 0.3s ease;
 }
 
-.mobile-toolbar a:hover {
+.mobile-tool-link:hover {
   color: var(--orange);
   transform: scale(1.2);
 }
@@ -446,6 +442,7 @@ hr {
 }
 
 /* ----------------------------------------------- */
+
 /* || About Page Styles */
 
 .event-gallery {
@@ -462,7 +459,9 @@ hr {
 }
 
 /* ------------------------------------------------ */
+
 /* || Desktop Version  */
+
 @media (min-width: 768px) {
   /* Navbar  */
   .tool-bar {
