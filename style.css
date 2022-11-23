@@ -247,6 +247,7 @@ hr {
   display: block;
   font-size: 1.5rem;
   transition: all 0.3s ease;
+  color: #fff;
 }
 
 .mobile-tool-link:hover {
@@ -285,9 +286,14 @@ hr {
 }
 
 .headline h1 {
-  color: var(--orange);
+  /* color: var(--orange); */
   font-size: 3rem;
   font-weight: 900;
+  color: transparent;
+  background-image: linear-gradient(45deg, #ff1900, #e7b930);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .greeting {
@@ -387,6 +393,7 @@ hr {
   background-repeat: no-repeat;
   background-size: 50% 50%;
   background-position: top left;
+  margin-right: 0.25rem;
 }
 
 .overlap-img {
