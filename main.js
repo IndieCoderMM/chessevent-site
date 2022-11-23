@@ -6,7 +6,7 @@ const featureGrid = document.querySelector('#feature-grid');
 
 const DISPLAY_MENU = 'mobile-menu';
 const FIXED_POS = 'fixed-position';
-const CLOSE_ICON = '<i class="fa-regular fa-circle-xmark"></i>';
+const CLOSE_ICON = '<i class="fa-solid fa-xmark"></i>';
 const MENU_ICON = '<i class="fa-solid fa-bars"></i>';
 
 const playersList = [
@@ -31,7 +31,7 @@ const playersList = [
   {
     name: 'Fabiano Caruana',
     title: 'Grandmaster (2766)',
-    bio: 'Fabiano, an Italian-American grandmaster, is a chess prodigy who became a grandmaster at 14.',
+    bio: 'Fabiano, an Italian-American grandmaster, is a chess prodigy who became a grandmaster at age 14.',
     profile: 'img/fabiano.jpg',
   },
 ];

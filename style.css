@@ -27,13 +27,15 @@ ul {
 button {
   background: none;
   border: none;
+  z-index: 10;
 }
 
 hr {
   width: 10%;
   height: 3px;
-  background-color: #ed641f;
+  background-color: #ff9500;
   border: none;
+  margin-bottom: 2rem;
 }
 
 :root {
@@ -124,6 +126,7 @@ hr {
   padding: 0.3rem 0.5rem;
   font-size: 0.9rem;
   text-align: center;
+  transition: all 0.25s;
 }
 
 .nav-menu .active a {
@@ -133,26 +136,53 @@ hr {
 }
 
 .nav-menu a:hover {
-  border-color: var(--orange);
-  color: var(--orange);
+  box-shadow: inset 0 -3.5em 0 0 var(--orange);
+  color: #fff;
+}
+
+/* Events button  */
+
+.nav-menu .nav-btn {
+  border: solid 4px var(--orange);
+  margin-left: 0.5rem;
 }
 
 .nav-menu .nav-btn a {
-  border: solid 2px var(--orange);
+  display: block;
+  width: 100%;
+  border: none;
   text-transform: uppercase;
   color: var(--orange);
   font-weight: 700;
-  margin-left: 0.25rem;
   padding: 0.5rem 1rem;
 }
 
-.nav-menu .nav-btn:hover {
-  border-color: #fff;
+.nav-btn:hover {
+  animation: pulse 0.5s;
+  border-color: #f94d3a;
+  box-shadow: 0 0 0 1em transparent;
 }
 
-.nav-menu .nav-btn:hover a {
-  background-color: var(--orange);
-  color: #fff;
+.nav-btn a:hover {
+  box-shadow: none;
+  color: var(--orange);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--orange);
+  }
+}
+
+#menu-btn {
+  font-size: 2rem;
+  padding: 1rem;
+  transition: all 0.2s ease-out;
+}
+
+#menu-btn:hover {
+  color: var(--orange);
+  transform: scale(1.2);
 }
 
 /* || Mobile Menu  */
@@ -165,14 +195,17 @@ hr {
   height: 100vh;
   top: 0;
   left: 0;
-  background-color: rgba(255, 255, 255, 0.487);
+  /* background-color: rgba(255, 255, 255, 0.487); */
+  background-color: #272a31c4;
   backdrop-filter: blur(5px);
   overflow-y: scroll;
+  z-index: 5;
 }
 
 .mobile-menu .nav-menu {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 100%;
   height: 100%;
   margin-bottom: 1rem;
@@ -184,11 +217,16 @@ hr {
   width: 100%;
   font-size: 1.8rem;
   font-weight: 700;
+  color: #fff;
 }
 
 .mobile-menu .nav-menu a:hover {
   background-color: var(--orange);
   color: #fff;
+}
+
+.mobile-menu .active a {
+  color: var(--orange);
 }
 
 .mobile-menu .nav-btn {
@@ -212,10 +250,12 @@ hr {
 .mobile-toolbar a {
   display: block;
   font-size: 1.5rem;
+  transition: all 0.3s ease;
 }
 
 .mobile-toolbar a:hover {
   color: var(--orange);
+  transform: scale(1.2);
 }
 
 .mobile-toolbar i {
@@ -224,6 +264,16 @@ hr {
 
 .mobile-menu .mobile-toolbar {
   display: grid;
+}
+
+.mobile-menu #menu-btn {
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.mobile-menu #menu-btn:hover {
+  transform: rotateZ(90deg);
+  color: var(--orange);
 }
 
 /* || Headline Section  */
@@ -236,16 +286,6 @@ hr {
   flex-direction: column;
   gap: 2rem;
   padding: 2rem 1rem;
-}
-
-#menu-btn {
-  font-size: 2rem;
-  padding: 1rem;
-  z-index: 10;
-}
-
-#menu-btn:hover {
-  color: var(--orange);
 }
 
 .headline h1 {
@@ -271,8 +311,29 @@ hr {
 
 /* || Program Section  */
 .program-container {
-  background-color: var(--dark);
+  position: relative;
+  background-image: url('img/chessbackground.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   color: #fff;
+}
+
+.program-container .section-heading {
+  z-index: 5;
+}
+
+.program-container hr {
+  z-index: 5;
+}
+
+.overlay-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #16171bce;
 }
 
 .program-card {
@@ -281,7 +342,8 @@ hr {
   justify-content: space-between;
   gap: 0.25rem;
   padding: 1rem;
-  background-color: #333;
+  background-color: rgba(51, 51, 51, 0.879);
+  z-index: 5;
 }
 
 .program-card p {
@@ -292,20 +354,27 @@ hr {
   color: var(--orange);
   font-size: 1.3rem;
   min-width: 5rem;
+  text-align: center;
 }
 
 #join-btn {
   font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
   background-color: var(--orange);
+  border: solid 2px var(--orange);
   color: #fff;
   padding: 0.5rem 4rem;
-  border: solid 1px var(--orange);
   margin: 1rem 0 1.5rem 0;
+  transition: all 0.3s ease;
 }
 
 #join-btn:hover {
   color: var(--orange);
-  background-color: var(--dark);
+  border-color: var(--orange);
+  background-color: transparent;
+  box-shadow: 0 0.5em 0.5em -0.4em var(--orange);
+  transform: translateY(-0.25em);
 }
 
 /* || Player Section  */
@@ -330,10 +399,6 @@ hr {
   position: absolute;
   top: 0;
   left: 0;
-}
-
-.player-info {
-  padding-left: 1rem;
 }
 
 .profile-pic {
@@ -383,8 +448,17 @@ hr {
 /* ----------------------------------------------- */
 /* || About Page Styles */
 
+.event-gallery {
+  padding: 3rem 5rem 6rem 5rem;
+}
+
+.event-card {
+  transition: all 0.3s ease;
+}
+
 .event-card:hover {
-  box-shadow: 0 5px 10px #ccc;
+  transform: translateY(-0.5em);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
 }
 
 /* ------------------------------------------------ */
@@ -431,7 +505,7 @@ hr {
   }
 
   .headline {
-    padding: 10rem 20rem 10rem 5rem;
+    padding: 15% 25% 15% 10%;
     background-color: #f2f2f2c2;
     backdrop-filter: blur(3px);
   }
@@ -445,6 +519,24 @@ hr {
   .program-card p {
     max-width: max-content;
     text-align: center;
+  }
+
+  #join-btn {
+    background-color: transparent;
+    border-color: transparent;
+    text-decoration: underline;
+    margin-top: 2rem;
+  }
+
+  #join-btn:hover {
+    text-decoration: none;
+    border-color: var(--orange);
+    color: #fff;
+  }
+
+  /* Player section  */
+  .player-info {
+    padding-left: 0.5rem;
   }
 
   /* About Page  */
