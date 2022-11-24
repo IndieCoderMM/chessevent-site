@@ -5,7 +5,7 @@
   <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Microverse Capstone Project</b></h3>
+  <h3><b>Microverse Capstone Project - Module 1</b></h3>
 
 </div>
 
@@ -35,17 +35,13 @@ This is my capstone project for module 1 of Microverse program. In this project,
 
 ### Tech Stack <a name="tech-stack"></a>
 
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JavaScript</li>
-    <li>[Bootstrap 5](https://getbootstrap.com/)</li>
-    <li>[Font Awesome](https://fontawesome.com/)</li>
-    <li>[Lato Fonts](https://www.latofonts.com/)</li>
-  </ul>
-</details>
+- HTML
+- CSS
+- JavaScript
+- [Bootstrap 5](https://getbootstrap.com/)
+- [Font Awesome](https://fontawesome.com/)
+- [Lato Fonts](https://www.latofonts.com/) 
+
 
 ### Key Features <a name="key-features"></a>
 
