@@ -13,7 +13,7 @@ const playersList = [
   {
     name: 'Magnus Calsen',
     title: 'Grandmaster (2859)',
-    bio: 'Carlsen is a Norwegian chess grandmaster who is the reigning five-time World Chess Champion.',
+    bio: 'Carlsen, a Norwegian grandmaster, is the five-time World Chess Champion and has been remarked as the greatest of all time.',
     profile: 'img/magnus.jpg',
   },
   {
@@ -31,8 +31,20 @@ const playersList = [
   {
     name: 'Fabiano Caruana',
     title: 'Grandmaster (2766)',
-    bio: 'Fabiano, an Italian-American grandmaster, is a chess prodigy who became a grandmaster at age 14.',
+    bio: 'Fabiano, an Italian-American grandmaster, is a chess prodigy who became a grandmaster at the age of 14.',
     profile: 'img/fabiano.jpg',
+  },
+  {
+    name: 'Wesley So',
+    title: 'Grandmaster (2763)',
+    bio: 'Wesley is a Filipino-American grandmaster and the number two player in the world behind Magnus Calsen.',
+    profile: 'img/wesley.jpg',
+  },
+  {
+    name: 'Anish Giri',
+    title: 'Grandmaster (2764)',
+    bio: 'Anish Giri, a Russian-born Dutch grandmaster, has been ranked as the number three player in the world.',
+    profile: 'img/giri.jpg',
   },
 ];
 
@@ -50,6 +62,7 @@ function getPlayerCard(player) {
   const infoSection = makeElement('section', ['player-info']);
   const name = makeElement('h3', ['player-name'], player.name);
   const title = makeElement('h4', ['player-title'], player.title);
+  const divider = makeElement('hr', ['info-divider']);
   const bio = makeElement('p', ['player-bio'], player.bio);
 
   profileImg.setAttribute('src', player.profile);
@@ -57,6 +70,7 @@ function getPlayerCard(player) {
   imgContainer.appendChild(profileImg);
   infoSection.appendChild(name);
   infoSection.appendChild(title);
+  infoSection.appendChild(divider);
   infoSection.appendChild(bio);
   card.appendChild(imgContainer);
   card.appendChild(infoSection);

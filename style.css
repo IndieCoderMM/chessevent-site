@@ -345,11 +345,21 @@ hr {
   gap: 0.25rem;
   padding: 1rem;
   background-color: rgba(51, 51, 51, 0.879);
+  border: solid 2px transparent;
+  transition: all 0.3s;
   z-index: 5;
 }
 
 .program-card p {
   max-width: 60%;
+}
+
+.program-card:hover {
+  border-color: #fff;
+}
+
+.program-card:hover i {
+  transform: scale(1.2);
 }
 
 .program-title {
@@ -383,48 +393,65 @@ hr {
 .player-card {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  justify-items: center;
+  padding: 0.25rem;
+  gap: 0.5rem;
 }
 
 .img-container {
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 8em;
+  height: 8em;
   background-image: url('img/chessboard.png');
   background-repeat: no-repeat;
   background-size: 50% 50%;
   background-position: top left;
-  margin-right: 0.25rem;
-}
-
-.overlap-img {
-  width: 50%;
-  height: 50%;
-  position: absolute;
-  top: 0;
-  left: 0;
+  justify-self: end;
 }
 
 .profile-pic {
-  width: 85%;
-  height: 85%;
   position: absolute;
   bottom: 0;
   right: 0;
+  width: 90%;
+  height: auto;
+  transition: all 0.2s ease;
+}
+
+.profile-pic:hover {
+  transform: translateY(-0.15em);
+  box-shadow: 0 10px 15px rgba(51, 51, 51, 0.774);
+}
+
+.player-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  justify-self: start;
+}
+
+.info-divider {
+  width: 10%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--gray);
 }
 
 .player-name {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 700;
+  margin: 0;
 }
 
 .player-title {
   color: var(--orange);
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-style: italic;
+  margin: 0;
 }
 
 .player-bio {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 /* || Partner section  */
@@ -517,9 +544,14 @@ hr {
   }
 
   /* Programs  */
+  .program-container {
+    min-height: 60vh;
+  }
+
   .program-card {
     flex-direction: column;
     justify-content: flex-start;
+    padding: 2.5rem 0.5rem 4rem 0.5rem;
   }
 
   .program-card p {
@@ -541,8 +573,8 @@ hr {
   }
 
   /* Player section  */
-  .player-info {
-    padding-left: 0.5rem;
+  #feature-grid {
+    padding: 1rem 5% 5rem 5%;
   }
 
   /* About Page  */
