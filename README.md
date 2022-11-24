@@ -1,27 +1,5 @@
 <a name="readme-top"></a>
 
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-After you're finished please remove all the comments and instructions!
--->
-
 <div align="center">
 
   <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
@@ -30,8 +8,6 @@ After you're finished please remove all the comments and instructions!
   <h3><b>Microverse Capstone Project</b></h3>
 
 </div>
-
-<!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
 
@@ -52,6 +28,8 @@ After you're finished please remove all the comments and instructions!
 # 💻 Chess Event Website <a name="about-project"></a>
 
 This is my capstone project for module 1 of Microverse program. In this project, I built a website for a chess tournaments, where people can see about the event, top players and other programs.
+
+![Mockup Image](./mockup.jpg)
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -79,7 +57,7 @@ This is my capstone project for module 1 of Microverse program. In this project,
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-Currently my project has not been deployed on GitHub pages.
+You can visit the live website on [GCC 2022 Website](https://indiecodermm.github.io/chessevent-site/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
