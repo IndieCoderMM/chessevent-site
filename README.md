@@ -25,7 +25,7 @@
 - [📺 Presentation](#presentation)
 - [📝 License](#license)
 
-# 💻 Chess Event Website <a name="about-project"></a>
+# ♟ Chess Event Website <a name="about-project"></a>
 
 This is my capstone project for module 1 of Microverse program. In this project, I built a website for a chess tournaments, where people can see about the event, top players and other programs.
 
