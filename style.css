@@ -377,7 +377,7 @@ hr {
   border: solid 2px var(--orange);
   color: #fff;
   padding: 0.5rem 4rem;
-  margin: 1rem 0 1.5rem 0;
+  margin: 1rem 0 1.5rem;
   transition: all 0.3s ease;
 }
 
@@ -480,7 +480,7 @@ hr {
 /* || About Page Styles */
 
 .event-gallery {
-  padding: 3rem 5rem 6rem 5rem;
+  padding: 3rem 5rem 6rem;
 }
 
 .event-card {
@@ -551,7 +551,7 @@ hr {
   .program-card {
     flex-direction: column;
     justify-content: flex-start;
-    padding: 2.5rem 0.5rem 4rem 0.5rem;
+    padding: 2.5rem 0.5rem 4rem;
   }
 
   .program-card p {
@@ -574,7 +574,7 @@ hr {
 
   /* Player section  */
   #feature-grid {
-    padding: 1rem 5% 5rem 5%;
+    padding: 1rem 5% 5rem;
   }
 
   /* About Page  */
