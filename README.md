@@ -25,7 +25,7 @@
 - [📺 Presentation](#presentation)
 - [📝 License](#license)
 
-# 💻 Chess Event Website <a name="about-project"></a>
+# ♟ Chess Event Website <a name="about-project"></a>
 
 This is my capstone project for module 1 of Microverse program. In this project, I built a website for a chess tournaments, where people can see about the event, top players and other programs.
 
@@ -117,6 +117,6 @@ You can watch my [presentation about this project here](https://www.loom.com/sha
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](./MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
