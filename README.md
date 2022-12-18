@@ -1,5 +1,6 @@
 <a name="readme-top"></a>
-
+[![CodeFactor](https://www.codefactor.io/repository/github/indiecodermm/chessevent-site/badge)](https://www.codefactor.io/repository/github/indiecodermm/chessevent-site)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 <div align="center">
 
   <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
